@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/server_ip"
+        android:textSize="@dimen/item_title_size"
+        android:id="@+id/title_ip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etIP"
+        android:inputType="text"
+        android:layout_toLeftOf="@+id/stConnect"
+        android:layout_toStartOf="@+id/stConnect"
+        android:layout_toEndOf="@+id/title_ip"
+        android:layout_toRightOf="@+id/title_ip"
+        android:layout_alignBaseline="@+id/title_ip"
+        android:hint="@string/defIP"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/server_port"
+        android:textSize="@dimen/item_title_size"
+        android:id="@+id/title_port"
+        android:layout_below="@+id/title_ip"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPort"
+        android:hint="@string/defPort"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/title_port"
+        android:layout_toRightOf="@+id/title_port"
+        android:layout_toEndOf="@+id/title_port"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hex_send"
+        android:id="@+id/cbHexS"
+        android:layout_below="@+id/title_port"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+    <!--    <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="已断开连接"
+            android:textOn="已连接"
+            android:id="@+id/tbState"
+            android:layout_marginStart="32dp"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/etPort" />-->
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connect"
+        android:id="@+id/stConnect"
+        android:checked="false"
+        android:layout_alignTop="@+id/title_ip"
+        android:layout_alignParentEnd="true"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSendContent"
+        android:layout_below="@+id/cbHexS"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btSend" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:id="@+id/btSend"
+        android:layout_alignBottom="@+id/etSendContent"
+        android:layout_alignParentEnd="true" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hex_show"
+        android:id="@+id/cbHexR"
+        android:layout_below="@+id/etSendContent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cyclic_send"
+        android:id="@+id/cbCyclicSend"
+        android:layout_below="@+id/cbHexR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCyclicTime"
+        android:hint="@string/defTime"
+        android:layout_alignBaseline="@+id/cbCyclicSend"
+        android:layout_toRightOf="@+id/cbCyclicSend"
+        android:layout_toEndOf="@+id/cbCyclicSend"
+        android:layout_toLeftOf="@+id/btClear"
+        android:layout_toStartOf="@+id/btClear"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:id="@+id/btClear"
+        android:layout_alignBottom="@+id/cbCyclicSend"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvGet"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/title_data" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rec_data"
+        android:id="@+id/title_data"
+        android:layout_below="@+id/btClear"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

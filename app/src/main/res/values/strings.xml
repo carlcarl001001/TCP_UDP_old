@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TCP_UDP</string>
+    <string name="defIP">192.168.2.193</string>
+    <string name="defPort">7000</string>
+    <string name="UDPLocalPort">6666</string>
+    <string name="TCPServer">TCPServer</string>
+    <string name="UDPServer">UDPServer</string>
+    <string name="TCPClient">TCPClient</string>
+    <string name="UDPClient">UDPClient</string>
+    <string name="receiveData">接收数据</string>
+    <string name="connect">连接</string>
+    <string name="listen">侦听</string>
+    <string name="send">发送</string>
+    <string name="broadcast">广播</string>
+    <string name="clear">清空接收数据</string>
+    <string name="receive">接收</string>
+    <string name="rec_data">接收数据:</string>
+    <string name="hex_send">16进制发送</string>
+    <string name="hex_show">16进制显示</string>
+    <string name="defTime">1000</string>
+    <string name="cyclic_send">定时发送(ms)</string>
+    <string name="server_ip">服务器IP:</string>
+    <string name="server_port">服务器端口:</string>
+    <string name="local_ip">本机IP:</string>
+    <string name="local_port">本机端口：</string>
+    <string name="can_not_find_server">未找到该服务器</string>
+    <string name="make_sure_input_right">请确认输入正确</string>
+    <string name="updated_client_list">客户端列表已更新</string>
+    <string name="remote_address_null">未获得远端socket</string>
+    <string name="client_send_first">必须先使用客户端向服务器发送数据</string>
+    <string name="please_check_network_station">请检查网络是否正常</string>
+    <string name="send_content_can_not_null">发送内容不能为空</string>
+</resources>

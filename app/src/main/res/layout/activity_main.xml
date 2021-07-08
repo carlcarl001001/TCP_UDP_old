@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--android:layout_weight="0.13"-->
+    <LinearLayout
+        android:id="@+id/AdLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" />
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/rb_tcpserver"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tcp_server_sel"
+            android:button="@null"
+            android:checked="true"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rb_tcpclient"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tcp_client_sel"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_udpserver"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/udp_server_sel"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_udpclient"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/udp_client_sel"
+            android:button="@null" />
+
+    </RadioGroup>
+
+
+    <!-- </RelativeLayout>-->
+    <!--       <ImageView
+               android:layout_width="100dp"
+               android:layout_height="50dp"
+               android:background="@drawable/tab_cover"
+               android:id="@+id/ivCover"/>-->
+    <!--</FrameLayout>-->
+    <!--         <TabWidget
+                 android:id="@android:id/tabs"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:visibility="gone" />-->
+    <!--  </LinearLayout>-->
+</LinearLayout>
